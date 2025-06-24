@@ -14,7 +14,7 @@ Este repositório contém os arquivos da landing page oficial do software Palco 
 
 Você pode visitar a página oficial através do seguinte link:
 
-https://jeferson1204.github.io/landing-page-palcomestre/#precos
+https://jeferson1204.github.io/landing-page-palcomestre/
 
 ## 🛠️ Tecnologias Utilizadas
 
