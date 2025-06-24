@@ -14,7 +14,7 @@ Este repositório contém os arquivos da landing page oficial do software Palco 
 
 Você pode visitar a página oficial através do seguinte link:
 
-https://jeferson1204.github.io/landing-page-palcomestre/
+https://jeferson1204.github.io/landing-page-palcomestre/#precos
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -24,7 +24,7 @@ https://jeferson1204.github.io/landing-page-palcomestre/
 
 ## 📝 Sobre o Projeto
 
-O Palco Mestre Vídeo Player é uma solução de desktop desenvolvida em Python para VJs, palestrantes, igrejas e outros profissionais que necessitam de controle flexível sobre playlists de vídeo durante apresentações ao vivo.
+O Palco Mestre Vídeo Player é uma solução de desktop desenvolvida em Python para Musicos amadores e profissionais que usam vídeo com letra e que necessitam de controle flexível sobre playlists de vídeo durante apresentações ao vivo.
 
 ---
 
@@ -38,7 +38,7 @@ O Palco Mestre Vídeo Player é uma solução de desktop desenvolvida em Python 
 
 ## 📝 Sobre o Projeto
 
-O Palco Mestre Vídeo Player é uma solução de desktop desenvolvida em Python para VJs, palestrantes, igrejas e outros profissionais que necessitam de controle flexível sobre playlists de vídeo durante apresentações ao vivo.
+O Palco Mestre Vídeo Player é uma solução de desktop desenvolvida em Python para Musicos amadores e profissionais que usam vídeo com letra e que necessitam de controle flexível sobre playlists de vídeo durante apresentações ao vivo.
 
 ---
 
