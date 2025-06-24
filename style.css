@@ -1,4 +1,14 @@
 /* --- RESET E ESTILOS GERAIS --- */
+:root {
+    --bg-dark: #121212;
+    --bg-light: #1e1e1e;
+    --bg-card: #2d2d2d;
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --accent-primary: #007acc;
+    --accent-hover: #005f9e;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,75 +20,72 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #121212;
-    color: #e0e0e0;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-secondary);
+    line-height: 1.7;
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 section {
-    padding: 80px 0;
+    padding: 60px 0;
     text-align: center;
 }
 
-h1, h2, h3, h4 {
-    font-weight: 700;
-    line-height: 1.2;
-}
-
 h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #ffffff;
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: var(--text-primary);
 }
 
-p {
-    font-size: 1.1rem;
-    color: #b3b3b3;
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 10px;
 }
 
 /* --- CABEÇALHO (HERO) --- */
 .hero {
-    background: #121212;
-    padding: 100px 0 60px 0;
-    text-align: center;
+    padding: 80px 0 60px 0;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    max-width: 800px;
-    margin: 0 auto 20px;
-    color: #ffffff;
+.hero .main-headline {
+    font-size: 3.2rem;
+    line-height: 1.1;
+    max-width: 750px;
+    margin: 0 auto 25px;
 }
 
 .hero .subtitle {
     font-size: 1.2rem;
-    max-width: 700px;
+    max-width: 650px;
     margin: 0 auto 40px;
 }
 
 .cta-button {
     display: inline-block;
-    background-color: #007acc;
-    color: #ffffff;
-    padding: 15px 35px;
-    font-size: 1.2rem;
-    font-weight: 600;
+    background-color: var(--accent-primary);
+    color: var(--text-primary);
+    padding: 18px 40px;
+    font-size: 1.1rem;
+    font-weight: 700;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.2s;
-    box-shadow: 0 4px 15px rgba(0, 122, 204, 0.3);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 122, 204, 0.2);
 }
 
 .cta-button:hover {
-    background-color: #005f9e;
-    transform: translateY(-3px);
+    background-color: var(--accent-hover);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 122, 204, 0.4);
 }
 
 .hero-image {
@@ -88,62 +95,63 @@ p {
 .hero-image img {
     max-width: 100%;
     border-radius: 8px;
-    border: 1px solid #333;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid #444;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
 }
 
 /* --- SEÇÃO PROBLEMA --- */
 .problem {
-    background-color: #1a1a1a;
+    background-color: var(--bg-light);
 }
 
-.problem p {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+.section-intro {
+    margin-bottom: 40px;
+}
+
+.problem-points {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.point {
+    flex-basis: 300px;
 }
 
 /* --- SEÇÃO SOLUÇÃO (FEATURES) --- */
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     text-align: left;
+    margin-top: 50px;
 }
 
 .feature-item {
-    background-color: #2d2d2d;
+    background-color: var(--bg-card);
     padding: 30px;
     border-radius: 8px;
-    border-left: 5px solid #007acc;
-}
-
-.feature-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #ffffff;
+    border-left: 5px solid var(--accent-primary);
 }
 
 /* --- SEÇÃO PREÇOS --- */
 .pricing {
-    background-color: #1a1a1a;
+    background-color: var(--bg-light);
 }
 
 .price-box {
-    max-width: 600px;
+    max-width: 550px;
     margin: 0 auto;
-    background-color: #2d2d2d;
+    background-color: var(--bg-card);
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
-    border-top: 5px solid #007acc;
+    border-top: 5px solid var(--accent-primary);
 }
 
 .price-box h3 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
 }
 
 .price-box ul {
@@ -153,24 +161,23 @@ p {
 }
 
 .price-box ul li {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 10px;
 }
 
 .price-box .price-original {
-    text-decoration: line-through;
     color: #888;
 }
 
 .price-box .price {
-    font-size: 4rem;
-    font-weight: 700;
-    color: #007acc;
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: var(--accent-primary);
     margin: 10px 0;
 }
 
 .price-box .payment-info {
-    font-style: italic;
+    font-weight: 700;
     margin-bottom: 30px;
 }
 
@@ -181,25 +188,31 @@ p {
 
 /* --- SEÇÃO FAQ --- */
 .faq-item {
-    max-width: 700px;
+    max-width: 650px;
     margin: 0 auto 20px;
     text-align: left;
-    background-color: #2d2d2d;
+    background-color: var(--bg-card);
     padding: 20px;
     border-radius: 5px;
 }
 
 .faq-item h4 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-    color: #ffffff;
+    font-size: 1.1rem;
+    color: var(--text-primary);
 }
 
 /* --- RODAPÉ --- */
 footer {
-    background-color: #1a1a1a;
-    padding: 30px 0;
+    background-color: var(--bg-dark);
+    padding: 40px 0;
     text-align: center;
     font-size: 0.9rem;
     border-top: 1px solid #333;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    h2 { font-size: 2.2rem; }
+    .hero h1 { font-size: 2.5rem; }
+    .features-grid { grid-template-columns: 1fr; }
 }
